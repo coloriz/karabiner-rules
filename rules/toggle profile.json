@@ -1,0 +1,43 @@
+{
+    "title": "Toggle between 'Custom profile' and 'Default profile'",
+    "rules": [
+        {
+            "description": "Use CapsLock to switch to 'Custom profile'",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "caps_lock"
+                    },
+                    "to": [
+                        {
+                            "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'Custom profile'"
+                        },
+                        {
+                            "shell_command": "osascript -e 'display notification \"Selected profile: Custom profile\" with title \"Karabiner-Elements\"'"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Use CapsLock to switch to 'Default profile'",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "caps_lock"
+                    },
+                    "to": [
+                        {
+                            "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'Default profile'"
+                        },
+                        {
+                            "shell_command": "osascript -e 'display notification \"Selected profile: Default profile\" with title \"Karabiner-Elements\"'"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
