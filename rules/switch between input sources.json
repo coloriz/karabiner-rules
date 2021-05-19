@@ -53,7 +53,7 @@
             ]
         },
         {
-            "description": "Map right command to F13",
+            "description": "Map right command to option+spacebar",
             "manipulators": [
                 {
                     "type": "basic",
