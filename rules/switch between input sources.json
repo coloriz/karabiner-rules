@@ -62,7 +62,8 @@
                     },
                     "to": [
                         {
-                            "key_code": "f13"
+                            "key_code": "spacebar",
+                            "modifiers": ["left_option"]
                         }
                     ]
                 }
